@@ -1,0 +1,33 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+}
+
+
+.festa {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding-bottom: 10px;
+}
+
+.festa .card-title {
+  font-size: 20px;
+  background-color: #dc3545; /* Vermelho */
+  color: #fff; /* Branco */
+  padding: 10px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  margin-bottom: 0; /* Remove o espaço abaixo do título */
+  width: 100%; /* Garante que o título ocupe toda a largura do card */
+  box-sizing: border-box; /* Evita que o padding extra cause quebra de linha */
+}
+
+.festa p {
+  margin: 10px 0px 0px 15px;
+  line-height: 20px;
+}
+
+footer {
+  color: #fff;
+}
