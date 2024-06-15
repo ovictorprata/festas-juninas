@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Festas Juninas em Belo Horizonte</title>
+    <title>Encontre a festa junina</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="bg-dark text-white py-4">
-        <div class="container">
-            <div>
-                <h1 class="text-center">Festas Juninas em Belo Horizonte</h1>
-            </div>
+        <div class="container d-flex align-items-center justify-content-between">
+          <div class="d-flex align-items-center">
+            <img src="https://cdn-icons-png.flaticon.com/512/5698/5698323.png" alt="Logo" class="logo">
+            <h1 class="text-center mb-0">Cadê a junina?</h1>
+          </div>
         </div>
-    </header>
+      </header>
     <div class="text-center mt-3">
         <label for="filtro-data" class="form-label">Filtrar por data:</label>
         <input type="date" id="filtro-data" class="form-control form-control-lg d-inline-block mx-auto">
@@ -30,16 +31,14 @@
     <main>
         <div class="container py-5">
             <div id="festas" class="row g-4">
-                <!-- Aqui serão inseridos os cards das festas dinamicamente -->
-                
-
+                <!-- Cards das festas -->
             </div>
         </div>
     </main>
 
     <footer class="bg-dark text-white py-3">
         <div class="container text-center">
-            &copy; 2024 Festas Juninas BH. Todos os direitos reservados.
+            &copy; 2024 Festas Juninas BH. Feito por <a href="https://github.com/ovictorprata">@ovictorprata</a>.
         </div>
     </footer>
 

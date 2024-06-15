@@ -2,7 +2,15 @@ body {
   font-family: 'Arial', sans-serif;
   background-color: #f0f0f0;
 }
+header h1 {
+  font-size: 30px;
+}
 
+.logo {
+  width: auto; /* Ajuste conforme necessário */
+  height: 60px;
+  margin-right: 20px; /* Espaçamento entre a logo e o texto */
+}
 
 .festa {
   background-color: #fff;
@@ -32,4 +40,10 @@ body {
 
 footer {
   color: #fff;
+}
+
+footer a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #e2e244;
 }
