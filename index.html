@@ -7,9 +7,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-sTJ6xe7xDoWrd1s0in8PAmFlpK69xgFbPtpU8dMMyi5orArVa/KOPIAqr8tqLr6Zd0V1OZM6V4/nWeZtKDPg2g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            padding-top: 4.5rem; /* Altura do header + espaço de margem */
+        }
+    </style>
 </head>
 <body>
-    <header class="py-4 fw-bold">
+    <header class="py-4 fw-bold fixed-top">
         <div class="container d-flex align-items-center justify-content-between">
           <div class="d-flex align-items-center">
             <img src="https://cdn-icons-png.flaticon.com/512/5698/5698323.png" alt="Logo" class="logo">
@@ -17,35 +22,35 @@
           </div>
         </div>
     </header>
-
-    <div class="container mt-4">
-        <div class="row justify-content-center">
-            <div class="col-lg-2">
-                <label for="filtro-data" class="form-label"> <i class="fas fa-solid fa-flag"></i> Filtrar por data:</label>
+    
+    <div class="container mt-5"> <!-- Espaçamento para evitar que o header sobreponha o conteúdo -->
+        <div class="row justify-content-between align-items-center">
+            <div class="col-lg-4">
+                <label for="filtro-data" class="form-label">Filtrar por data:</label>
                 <input type="date" id="filtro-data" class="form-control form-control-lg">
             </div>
+            <div class="col-lg-4">
+                <label for="filtro-preco" class="form-label">Filtrar por preço:</label>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="filtro-gratuito">
+                    <label class="form-check-label" for="filtro-gratuito">Gratuito</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="filtro-pago">
+                    <label class="form-check-label" for="filtro-pago">Pago</label>
+                </div>
+            </div>
+            <main>
+                <div class="container py-5">
+                    <p class="lead mb-4">Encontre as festas juninas em Belo Horizonte mais pertos de você.</p>
+                    <div id="festas" class="row g-4">
+                        <!-- Cards das festas serão inseridos dinamicamente pelo JavaScript -->
+                    </div>
+                </div>
+            </main>
         </div>
     </div>
 
-    <!-- <div class="container mt-3">
-        <div class="row justify-content-center">
-            <div class="col-lg-6 text-center">
-                <label for="filtro-preco" class="form-label">Filtrar por preço:</label>
-                <div class="d-flex justify-content-center align-items-center mt-2">
-                    <input type="range" class="form-range" id="filtro-preco" min="0" max="30" value="30">
-                    <span id="valor-preco" class="ms-3">Até R$ 30,00</span>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-    <main>
-        <div class="container py-5">
-            <div id="festas" class="row g-4">
-                <!-- Cards das festas serão inseridos dinamicamente pelo JavaScript -->
-            </div>
-        </div>
-    </main>
 
     <footer class="text-white py-3">
         <div class="container text-center">
