@@ -2,9 +2,12 @@ body {
   font-family: 'Arial', sans-serif;
   background-color: #f0f0f0;
 }
-header h1 {
+
+header { 
+  background-color: #190f42;
   font-size: 30px;
 }
+
 
 .logo {
   width: auto; /* Ajuste conforme necessário */
@@ -22,8 +25,8 @@ header h1 {
 
 .festa .card-title {
   font-size: 20px;
-  background-color: #e2e244; 
-  /* color: #fff;  */
+  background-color: #190f42; 
+  color: #fff; 
   padding: 10px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -39,11 +42,11 @@ header h1 {
 }
 
 footer {
-  color: #fff;
+  background-color: #190f42;
 }
 
 footer a {
   font-weight: 600;
   text-decoration: none;
-  color: #e2e244;
+  color: #491bff;
 }

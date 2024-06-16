@@ -2,7 +2,7 @@
   {
     "local": "CCBB BH",
     "horario": "16h",
-    "endereco": "CCBB BH – Praça da Liberdade",
+    "endereco": "Praça da Liberdade, 450 - Funcionários",
     "preco": "Gratuito – retirada online",
     "data": "2024-06-14"
   },
@@ -23,28 +23,28 @@
   {
     "local": "Distrital",
     "horario": "20h",
-    "endereco": "Distrital – Rua Opala, s/n – Cruzeiro",
+    "endereco": "Rua Opala, s/n – Cruzeiro",
     "preco": "R$20 – disponível online",
     "data": "2024-06-14"
   },
   {
     "local": "Lab.",
     "horario": "22h",
-    "endereco": "Lab. – Av. do Contorno, 6342 Savassi",
+    "endereco": "Av. do Contorno, 6342 Savassi",
     "preco": "R$25 – disponível online",
     "data": "2024-06-14"
   },
   {
     "local": "Colégio Arnaldo - Unidade Anchieta",
     "horario": "9h",
-    "endereco": "Colégio Arnaldo – Unidade Anchieta – Rua Dom Vital, 80 – Anchieta",
+    "endereco": "Rua Dom Vital, 80 – Anchieta",
     "preco": "a partir de R$8 – disponível online",
     "data": "2024-06-15"
   },
   {
     "local": "Colégio Arnaldo - Unidade Funcionários",
     "horario": "9h",
-    "endereco": "Colégio Arnaldo – Unidade Funcionários – Rua dos Timbiras, 540 Funcionários",
+    "endereco": "Rua dos Timbiras, 540 Funcionários",
     "preco": "a partir de R$8 – disponível online",
     "data": "2024-06-15"
   },
@@ -52,118 +52,118 @@
     "local": "Rua José Dias Viêira",
     "horario": "9h",
     "endereco": "Rua José Dias Viêira, 46, Entrada pela Rua Feliciano Ribeiro – Venda Nova",
-    "preco": "Gratuito-  retirada online",
+    "preco": "Gratuito - Retirada online",
     "data": "2024-06-15"
   },
   {
     "local": "Centro Acadêmico de Esporte e Lazer",
     "horario": "10h",
-    "endereco": "Centro Acadêmico de Esporte e Lazer – Rua Dom José Gaspar, 290 – Coração Eucarístico",
+    "endereco": "Rua Dom José Gaspar, 290 – Coração Eucarístico",
     "preco": "R$20 – disponível online",
     "data": "2024-06-15"
   },
   {
     "local": "Museu dos Brinquedos",
     "horario": "10h ás 12h30 e 14h às 17h",
-    "endereco": "Museu dos Brinquedos – Av. Afonso Pena, 2564 – Funcionários",
+    "endereco": "Av. Afonso Pena, 2564 – Funcionários",
     "preco": "R$15 (meia-entrada) | R$30 (inteira)",
     "data": "2024-06-15"
   },
   {
     "local": "Escola da Serra",
     "horario": "10h30",
-    "endereco": "Escola da Serra – Rua do Ouro, 1900",
+    "endereco": "Rua do Ouro, 1900",
     "preco": "R$17,50 – disponível online",
     "data": "2024-06-15"
   },
   {
     "local": "CCBB BH",
     "horario": "11h",
-    "endereco": "CCBB BH – Praça da Liberdade",
+    "endereco": "Praça da Liberdade, 450 - Funcionários",
     "preco": "Gratuito – retirada online",
     "data": "2024-06-15"
   },
   {
     "local": "Colégio Domínio",
     "horario": "12h",
-    "endereco": "Colégio Domínio – Rua Nayda Salles Teixeira, 37 – Camargos",
+    "endereco": "Rua Nayda Salles Teixeira, 37 – Camargos",
     "preco": "R$10 – disponível online",
     "data": "2024-06-15"
   },
   {
     "local": "Mamute Bar",
     "horario": "12h",
-    "endereco": "Mamute Bar – Rua Brás Cubas, 118 – Anchieta",
+    "endereco": "Rua Brás Cubas, 118 – Anchieta",
     "preco": "R$12 – disponível online",
     "data": "2024-06-15"
   },
   {
     "local": "Nossa Escola Sistema de Educação",
     "horario": "14h",
-    "endereco": "Nossa Escola Sistema de Educação – Rua Padre Rolim, 959 – Funcionários",
+    "endereco": "Rua Padre Rolim, 959 – Funcionários",
     "preco": "R$20 – disponível online",
     "data": "2024-06-15"
   },
   {
     "local": "Mandaknega",
     "horario": "15h",
-    "endereco": "Mandaknega – Rua Lignito, 22 – Santa Efigênia",
+    "endereco": "Rua Lignito, 22 – Santa Efigênia",
     "preco": "R$5",
     "data": "2024-06-15"
   },
   {
     "local": "Paróquia Nossa Senhora do Carmo – Sion",
     "horario": "16h",
-    "endereco": "Paróquia Nossa Senhora do Carmo – Sion – Rua Grão Mogol, 502 – Carmo",
+    "endereco": "Rua Grão Mogol, 502 – Carmo",
     "preco": "Gratuito",
     "data": "2024-06-15"
   },
   {
     "local": "Colégio Escolápio São Miguel",
     "horario": "16h",
-    "endereco": "Colégio Escolápio São Miguel – Rua Ildefonso Alvin, 501 – Nova Floresta",
+    "endereco": "Rua Ildefonso Alvin, 501 – Nova Floresta",
     "preco": "R$10 – disponível online",
     "data": "2024-06-15"
   },
   {
     "local": "Comunidade Católica Reviver",
     "horario": "18h",
-    "endereco": "Comunidade Católica Reviver – Rua Tabaiares, 30 – Floresta",
-    "preco": "R$ 25,00 (incluso comida e bebida",
+    "endereco": "Rua Tabaiares, 30 – Floresta",
+    "preco": "R$ 25,00 (incluso comida e bebida)",
     "data": "2024-06-15"
   },
   {
     "local": "Paróquia São Gabriel",
     "horario": "18h",
-    "endereco": "Paróquia São Gabriel – Rua Theodoro Bonfim, 85",
+    "endereco": "Rua Theodoro Bonfim, 85",
     "preco": "Gratuito",
     "data": "2024-06-15"
   },
   {
     "local": "Labareda Clube",
     "horario": "19h",
-    "endereco": "Labareda Clube – Av. Portugal, 4020 – Itapoã",
+    "endereco": "Av. Portugal, 4020 – Itapoã",
     "preco": "R$40 – disponível online",
     "data": "2024-06-15"
   },
   {
     "local": "Granada Iate Clube",
     "horario": "19h",
-    "endereco": "Granada Iate Clube – Rua Istambul, 345 – Braúnas",
+    "endereco": "Rua Istambul, 345 – Braúnas",
     "preco": "R$30 – disponível online",
     "data": "2024-06-15"
   },
   {
     "local": "Comunidade Nossa Senhora das Graças – Paróquia Jesus Ressuscitado",
     "horario": "20h",
-    "endereco": "Comunidade Nossa Senhora das Graças – Paróquia Jesus Ressuscitado – R. Dr. Geraldo Starling Soares, 460 – Regina",
+    "endereco": "R. Dr. Geraldo Starling Soares, 460 – Regina",
     "preco": "Gratuito",
     "data": "2024-06-15"
   },
   {
     "local": "Quintal da Casa",
     "horario": "21h",
-    "endereco": "Quintal da Casa – Rua Padre Marinho 30 – Santa Efigênia",
+    "endereco": "Rua Padre Marinho 30 – Santa Efigênia",
     "preco": "R$20 – disponível online",
     "data": "2024-06-15"
   },
