@@ -362,5 +362,124 @@
     "endereco": "UniBH – Campus Buritis – Av. Professor Mário Werneck, 1685",
     "preco": "R$20 – disponível online",
     "data": "2024-06-23"
+  },
+  {
+    "local": "Arraiá da Vovó Luiza",
+    "horario": "10h às 12h30 e 14h às 17h",
+    "endereco": "Museu dos Brinquedos – Av. Afonso Pena, 2564 – Funcionários",
+    "preco": "R$15 (meia-entrada) | R$30 (inteira)",
+    "data": "2024-06-29"
+  },
+  {
+    "local": "Festa junina CÉIA 2024",
+    "horario": "12h",
+    "endereco": "R. Ramos de Azevedo, 153 – Monsenhor Messias",
+    "preco": "R$16 – disponível online",
+    "data": "2024-06-29"
+  },
+  {
+    "local": "Trem Caipira – Apresentação de quadrilha + brincadeiras juninas",
+    "horario": "14h",
+    "endereco": "Museu de Artes e Ofícios – Praça Rui Barbosa, 600 – Centro",
+    "preco": "Gratuito",
+    "data": "2024-06-29"
+  },
+  {
+    "local": "Arraiá do São Miguel",
+    "horario": "14h",
+    "endereco": "Aquilombar Cultura e Diversidade – Rua Itapecerica, 865 – Lagoinha",
+    "preco": "R$15 – disponível online",
+    "data": "2024-06-29"
+  },
+  {
+    "local": "Arraiá da Leste e Andacunfé – Coco da Gente convida o Bloco de Pífanos + Andacunfé + Trio Bem-te-quero + Forró de Cabo a Rabo",
+    "horario": "15h",
+    "endereco": "Escadão Agroflorestal – Rua Tulipa, 125 – Bairro Esplanada",
+    "preco": "Gratuito",
+    "data": "2024-06-29"
+  },
+  {
+    "local": "Forronejo – Banda Bloco Me Deixe + Forró dos Menino",
+    "horario": "17h",
+    "endereco": "Cervejaria Rhara – Rua Cristina, 1203 – São Pedro",
+    "preco": "R$25 – disponível online",
+    "data": "2024-06-29"
+  },
+  {
+    "local": "Festa Junina da Umbigo",
+    "horario": "18h",
+    "endereco": "Casa Umbigo – Rua Hermílio Alves, 437 – Santa Tereza",
+    "preco": "R$42 – disponível online",
+    "data": "2024-06-29"
+  },
+  {
+    "local": "Arraiá de Santa Efigênia",
+    "horario": "19h",
+    "endereco": "Paróquia Santa Efigênia dos Militares – Rua Álvares Maciel, 223, Santa Efigênia",
+    "preco": "Gratuito",
+    "data": "2024-06-29"
+  },
+  {
+    "local": "Festa Junina do Xita",
+    "horario": "20h",
+    "endereco": "Av. Mem de Sá, 1205 – Santa Efigênia",
+    "preco": "R$15 – disponível online",
+    "data": "2024-06-29"
+  },
+  {
+    "local": "Arraiá na Floresta – Percussão Circular",
+    "horario": "13h",
+    "endereco": "Av. Assis Chateaubriand, 514 – Floresta",
+    "preco": "Gratuito",
+    "data": "2024-06-30"
+  },
+  {
+    "local": "Arraiá Kids",
+    "horario": "16h",
+    "endereco": "Shopping Estação – Av. Cristiano Machado, 11833 – Vila Cloris",
+    "preco": "Gratuito – retirada de ingressos antecipada",
+    "data": "2024-06-30"
+  },
+  {
+    "local": "Arraiá da Inclusão",
+    "horario": "13h30",
+    "endereco": "APAE BH – Rua Cristal, 78 – Santa Tereza",
+    "preco": "Gratuito – retire seu ingresso",
+    "data": "2024-07-06"
+  },
+  {
+    "local": "Arraiá do Beiço – Beiço do Wando + Pelasamba + Pé de Serra",
+    "horario": "14h",
+    "endereco": "Av. Brasil, 10 – Santa Efigênia",
+    "preco": "Gratuito – retire seu ingresso",
+    "data": "2024-07-06"
+  },
+  {
+    "local": "Arraiá do Roça Bar",
+    "horario": "17h",
+    "endereco": "Roça Bar Pizzaria – Av. Maurete José dos Santos, 310 – Manacás",
+    "preco": "Gratuito – retire seu ingresso",
+    "data": "2024-07-06"
+  },
+  {
+    "local": "Julina do Quintal",
+    "horario": "12h",
+    "endereco": "Quintal do Chalé – Av. Professor Mário Werneck, 530 – Estoril",
+    "preco": "R$35 – disponível online",
+    "data": "2024-07-13"
+  },
+  {
+    "local": "Arraiá Nossa Senhora das Dores",
+    "horario": "17h",
+    "endereco": "Paróquia Nossa Senhora das Dores – Rua Silva Jardim, 100, Floresta",
+    "preco": "Gratuito",
+    "data": "2024-07-13"
+  },
+  {
+    "local": "Arraiá do Cruzeiro 2024 – Trio Forrozão",
+    "horario": "15h",
+    "endereco": "Cruzeiro Esporte Clube – Rua dos Guajajaras, 1722 Barro Preto",
+    "preco": "R$40 – disponível online",
+    "data": "2024-07-20"
   }
 ]

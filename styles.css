@@ -4,6 +4,9 @@
   }
 }
 
+p a {
+  color: #4b7bec
+}
 .pagination-container {
   display: flex;
   justify-content: center;
@@ -50,6 +53,20 @@ header {
 .festa p {
   margin: 10px 0px 0px 15px;
   line-height: 20px;
+}
+
+#pagination button {
+  color: #190f42;
+  border-color: #190f42;
+}
+
+#pagination button.active {
+  background-color: #190f42;
+  color: #fff;
+}
+
+#pagination button:hover {
+  background-color: #4b7bec;
 }
 
 footer {

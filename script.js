@@ -57,11 +57,13 @@ document.addEventListener('DOMContentLoaded', function() {
         btnAnterior.classList.add('btn', 'btn-outline-primary', 'mx-1');
         btnAnterior.innerText = '<';
         btnAnterior.addEventListener('click', function() {
-            if (paginaAtual > 1) {
-                paginaAtual--;
-                mostrarFestas();
-                window.scrollTo(0, 0); // Rolando para o topo da página
-            }
+            setTimeout(() => {
+                if (paginaAtual > 1) {
+                    paginaAtual--;
+                    mostrarFestas();
+                    window.scrollTo(0, 0);
+                }
+            },600)
         });
         paginacaoContainer.appendChild(btnAnterior);
 
@@ -77,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
             button.addEventListener('click', function() {
                 paginaAtual = i;
                 mostrarFestas();
-                window.scrollTo(0, 0); // Rolando para o topo da página
+                window.scrollTo(0, 0);
             });
 
             paginacaoContainer.appendChild(button);
@@ -90,7 +92,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (paginaAtual < totalPaginas) {
                 paginaAtual++;
                 mostrarFestas();
-                window.scrollTo(0, 0); // Rolando para o topo da página
+                window.scrollTo(0, 0);
             }
         });
         paginacaoContainer.appendChild(btnProximo);
@@ -130,7 +132,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         festas = festasFiltradas;
-        paginaAtual = 1; // Resetar para a primeira página após filtragem
+        paginaAtual = 1;
         mostrarFestas();
     }
 
