@@ -1,8 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
     const festasContainer = document.getElementById('festas');
     const paginacaoContainer = document.getElementById('pagination');
+    const filtroDataInput = document.getElementById('filtro-data');
+    const filtroGratuitoInput = document.getElementById('filtro-gratuito');
+    const filtroPagoInput = document.getElementById('filtro-pago');
 
     let festas = []; // Variável global para armazenar as festas carregadas
+    let festasFiltradas = []; // Variável para armazenar as festas filtradas
     let festasPorPagina = 20;
     let paginaAtual = 1;
 
@@ -10,6 +14,8 @@ document.addEventListener('DOMContentLoaded', function() {
         try {
             const response = await fetch('festas.json');
             festas = await response.json();
+
+            festasFiltradas = festas;
             mostrarFestas();
         } catch (error) {
             console.error('Erro ao carregar festas.json:', error);
@@ -17,22 +23,16 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function mostrarFestas() {
-        festasContainer.innerHTML = ''; // Limpa o conteúdo anterior
+        limparElemento(festasContainer);
 
         const inicio = (paginaAtual - 1) * festasPorPagina;
         const fim = inicio + festasPorPagina;
-        const festasPagina = festas.slice(inicio, fim);
+        const festasPagina = festasFiltradas.slice(inicio, fim);
 
         festasPagina.forEach(festa => {
-            const partesData = festa.data.split('-');
-            const ano = partesData[0];
-            const mes = partesData[1];
-            const dia = partesData[2];
+            const dataFormatada = formatarData(festa.data);
 
-            const dataFormatada = `${dia}/${mes}/${ano}`;
-
-            const div = document.createElement('div');
-            div.classList.add('col-lg-6');
+            const div = criarElemento('div', 'col-lg-6');
             div.innerHTML = `
                 <div class="festa">
                     <h2 class="card-title">${festa.local}</h2>
@@ -49,91 +49,100 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function mostrarPaginacao() {
-        paginacaoContainer.innerHTML = ''; // Limpa a paginação anterior
+        limparElemento(paginacaoContainer);
 
-        const totalPaginas = Math.ceil(festas.length / festasPorPagina);
+        const totalPaginas = Math.ceil(festasFiltradas.length / festasPorPagina);
 
-        const btnAnterior = document.createElement('button');
-        btnAnterior.classList.add('btn', 'btn-outline-primary', 'mx-1');
-        btnAnterior.innerText = '<';
-        btnAnterior.addEventListener('click', function() {
-            setTimeout(() => {
-                if (paginaAtual > 1) {
-                    paginaAtual--;
-                    mostrarFestas();
-                    const paginacaoDiv = document.querySelector('div.row');
-                    paginacaoDiv.scrollIntoView({ behavior: 'smooth' });
-                }
-            },600)
+        const btnAnterior = criarBotaoPaginacao('<', function() {
+            if (paginaAtual > 1) {
+                paginaAtual--;
+                mostrarFestas();
+                scrollParaPaginacao();
+            }
         });
         paginacaoContainer.appendChild(btnAnterior);
 
         for (let i = 1; i <= totalPaginas; i++) {
-            const button = document.createElement('button');
-            button.classList.add('btn', 'btn-outline-primary', 'mx-1');
-            button.innerText = i;
+            const button = criarBotaoPaginacao(i, function() {
+                paginaAtual = i;
+                mostrarFestas();
+                scrollParaPaginacao();
+            });
 
             if (i === paginaAtual) {
                 button.classList.add('active');
             }
 
-            button.addEventListener('click', function() {
-                paginaAtual = i;
-                mostrarFestas();
-                const paginacaoDiv = document.querySelector('div.row');
-                paginacaoDiv.scrollIntoView({ behavior: 'smooth' });
-            });
-
             paginacaoContainer.appendChild(button);
         }
 
-        const btnProximo = document.createElement('button');
-        btnProximo.classList.add('btn', 'btn-outline-primary', 'mx-1');
-        btnProximo.innerText = '>';
-        btnProximo.addEventListener('click', function() {
+        const btnProximo = criarBotaoPaginacao('>', function() {
             if (paginaAtual < totalPaginas) {
                 paginaAtual++;
                 mostrarFestas();
-                paginacaoContainer.scrollIntoView({ behavior: 'smooth' });
+                scrollParaPaginacao();
             }
         });
         paginacaoContainer.appendChild(btnProximo);
     }
 
-    const filtroDataInput = document.getElementById('filtro-data');
-    filtroDataInput.addEventListener('change', function() {
-        filtrarFestas();
-    });
+    function criarBotaoPaginacao(texto, callback) {
+        const button = criarElemento('button', 'btn', 'btn-outline-primary', 'mx-1');
+        button.innerText = texto;
+        button.addEventListener('click', callback);
+        return button;
+    }
 
-    const filtroGratuitoInput = document.getElementById('filtro-gratuito');
-    filtroGratuitoInput.addEventListener('change', function() {
-        filtrarFestas();
-    });
+    function formatarData(data) {
+        const partesData = data.split('-');
+        const ano = partesData[0];
+        const mes = partesData[1];
+        const dia = partesData[2];
+        return `${dia}/${mes}/${ano}`;
+    }
 
-    const filtroPagoInput = document.getElementById('filtro-pago');
-    filtroPagoInput.addEventListener('change', function() {
-        filtrarFestas();
-    });
+    function limparElemento(elemento) {
+        elemento.innerHTML = '';
+    }
+
+    function criarElemento(tagName, ...classNames) {
+        const elemento = document.createElement(tagName);
+        elemento.classList.add(...classNames);
+        return elemento;
+    }
+
+    function scrollParaPaginacao() {
+        const paginacaoDiv = document.getElementById('pagination');
+        paginacaoDiv.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    filtroDataInput.addEventListener('change', filtrarFestas);
+    filtroGratuitoInput.addEventListener('change', filtrarFestas);
+    filtroPagoInput.addEventListener('change', filtrarFestas);
 
     function filtrarFestas() {
         const dataSelecionada = filtroDataInput.value;
         const gratuitoSelecionado = filtroGratuitoInput.checked;
         const pagoSelecionado = filtroPagoInput.checked;
-        let festasFiltradas = festas;
+
+        festasFiltradas = festas;
 
         if (dataSelecionada) {
             festasFiltradas = festasFiltradas.filter(festa => festa.data === dataSelecionada);
         }
 
-        if (gratuitoSelecionado && pagoSelecionado) {
-            // Mostrar todas as festas
-        } else if (gratuitoSelecionado) {
-            festasFiltradas = festasFiltradas.filter(festa => festa.preco.toLowerCase().includes('gratuito'));
-        } else if (pagoSelecionado) {
-            festasFiltradas = festasFiltradas.filter(festa => !festa.preco.toLowerCase().includes('gratuito'));
+        if (gratuitoSelecionado || pagoSelecionado) {
+            festasFiltradas = festasFiltradas.filter(festa => {
+                if (gratuitoSelecionado && festa.preco.toLowerCase().includes('gratuito')) {
+                    return true;
+                }
+                if (pagoSelecionado && !festa.preco.toLowerCase().includes('gratuito')) {
+                    return true;
+                }
+                return false;
+            });
         }
 
-        festas = festasFiltradas;
         paginaAtual = 1;
         mostrarFestas();
     }
