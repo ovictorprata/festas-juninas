@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function scrollParaPaginacao() {
-        window.scrollTo(0, 0);
+        window.scrollTo(0, 200);
     }
 
     filtroDataInput.addEventListener('change', filtrarFestas);
@@ -125,6 +125,8 @@ document.addEventListener('DOMContentLoaded', function() {
         const pagoSelecionado = filtroPagoInput.checked;
 
         festasFiltradas = festas;
+
+        
 
         if (dataSelecionada) {
             festasFiltradas = festasFiltradas.filter(festa => festa.data === dataSelecionada);
