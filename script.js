@@ -1,21 +1,29 @@
 document.addEventListener('DOMContentLoaded', function() {
     const festasContainer = document.getElementById('festas');
+    const paginacaoContainer = document.getElementById('pagination');
+
     let festas = []; // Variável global para armazenar as festas carregadas
+    let festasPorPagina = 20;
+    let paginaAtual = 1;
 
     async function carregarFestas() {
         try {
             const response = await fetch('festas.json');
             festas = await response.json();
-            mostrarFestas(festas);
+            mostrarFestas();
         } catch (error) {
             console.error('Erro ao carregar festas.json:', error);
         }
     }
 
-    function mostrarFestas(listaFestas) {
+    function mostrarFestas() {
         festasContainer.innerHTML = ''; // Limpa o conteúdo anterior
 
-        listaFestas.forEach(festa => {
+        const inicio = (paginaAtual - 1) * festasPorPagina;
+        const fim = inicio + festasPorPagina;
+        const festasPagina = festas.slice(inicio, fim);
+
+        festasPagina.forEach(festa => {
             const partesData = festa.data.split('-');
             const ano = partesData[0];
             const mes = partesData[1];
@@ -36,6 +44,56 @@ document.addEventListener('DOMContentLoaded', function() {
             `;
             festasContainer.appendChild(div);
         });
+
+        mostrarPaginacao();
+    }
+
+    function mostrarPaginacao() {
+        paginacaoContainer.innerHTML = ''; // Limpa a paginação anterior
+
+        const totalPaginas = Math.ceil(festas.length / festasPorPagina);
+
+        const btnAnterior = document.createElement('button');
+        btnAnterior.classList.add('btn', 'btn-outline-primary', 'mx-1');
+        btnAnterior.innerText = '<';
+        btnAnterior.addEventListener('click', function() {
+            if (paginaAtual > 1) {
+                paginaAtual--;
+                mostrarFestas();
+                window.scrollTo(0, 0); // Rolando para o topo da página
+            }
+        });
+        paginacaoContainer.appendChild(btnAnterior);
+
+        for (let i = 1; i <= totalPaginas; i++) {
+            const button = document.createElement('button');
+            button.classList.add('btn', 'btn-outline-primary', 'mx-1');
+            button.innerText = i;
+
+            if (i === paginaAtual) {
+                button.classList.add('active');
+            }
+
+            button.addEventListener('click', function() {
+                paginaAtual = i;
+                mostrarFestas();
+                window.scrollTo(0, 0); // Rolando para o topo da página
+            });
+
+            paginacaoContainer.appendChild(button);
+        }
+
+        const btnProximo = document.createElement('button');
+        btnProximo.classList.add('btn', 'btn-outline-primary', 'mx-1');
+        btnProximo.innerText = '>';
+        btnProximo.addEventListener('click', function() {
+            if (paginaAtual < totalPaginas) {
+                paginaAtual++;
+                mostrarFestas();
+                window.scrollTo(0, 0); // Rolando para o topo da página
+            }
+        });
+        paginacaoContainer.appendChild(btnProximo);
     }
 
     const filtroDataInput = document.getElementById('filtro-data');
@@ -71,7 +129,9 @@ document.addEventListener('DOMContentLoaded', function() {
             festasFiltradas = festasFiltradas.filter(festa => !festa.preco.toLowerCase().includes('gratuito'));
         }
 
-        mostrarFestas(festasFiltradas);
+        festas = festasFiltradas;
+        paginaAtual = 1; // Resetar para a primeira página após filtragem
+        mostrarFestas();
     }
 
     carregarFestas();

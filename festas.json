@@ -180,5 +180,187 @@
     "endereco": "Espaço Meet – Av. Raja Gabáglia 2671 – São Bento",
     "preco": "R$25 – disponível online",
     "data": "2024-06-15"
+  },
+  {
+    "local": "Movimento Sinergia – 6ª Edição – Arraiá Junino",
+    "horario": "9h",
+    "endereco": "Parque Eco. Prof. Marcos Mazzoni – Rua Professor Costa Chiabi em frente ao nº 333 – Cidade Nova",
+    "preco": "Gratuito",
+    "data": "2024-06-16"
+  },
+  {
+    "local": "Arraial do CCBB BH",
+    "horario": "11h",
+    "endereco": "CCBB BH – Praça da Liberdade",
+    "preco": "Gratuito – retirada online",
+    "data": "2024-06-16"
+  },
+  {
+    "local": "Tropeirão Junino do EJC",
+    "horario": "11h",
+    "endereco": "Paróquia Nossa Senhora de Nazaré – Rua Carmésia, 540 – Santa Inês",
+    "preco": "R$20",
+    "data": "2024-06-16"
+  },
+  {
+    "local": "Arraiá da Nossa Senhora Rainha",
+    "horario": "12h",
+    "endereco": "Paróquia Nossa Senhora Rainha – Rua Modesto Carvalho de Araújo, 227 – Belvedere",
+    "preco": "Gratuito",
+    "data": "2024-06-16"
+  },
+  {
+    "local": "Arraiá das Piranhas",
+    "horario": "14h",
+    "endereco": "O Quinteiro Bar – Rua Salinas, 1008 Santa Tereza",
+    "preco": "R$25 – disponível online",
+    "data": "2024-06-16"
+  },
+  {
+    "local": "Arraiá Kids",
+    "horario": "15h",
+    "endereco": "Shopping Estação – Av. Cristiano Machado, 11833 – Vila Cloris",
+    "preco": "Gratuito – retirada de ingressos antecipada",
+    "data": "2024-06-16"
+  },
+  {
+    "local": "Arraiá da 5 de janeiro",
+    "horario": "15h",
+    "endereco": "Rua 5 de janeiro – Bairro Mariano de Abreu",
+    "preco": "Gratuito",
+    "data": "2024-06-16"
+  },
+  {
+    "local": "Arraiá do Ao vivão",
+    "horario": "15h",
+    "endereco": "Bar da Orla – Av. Otacílio Negrão de Lima, 2640 – São Luiz",
+    "preco": "Gratuito – retire seu ingresso",
+    "data": "2024-06-16"
+  },
+  {
+    "local": "Arraiá Intrépida Alegria – 3ª Edição",
+    "horario": "16h",
+    "endereco": "Intrépida Alegria – Rua Alfredo Guzella, 123 – Planalto",
+    "preco": "R$25 – disponível online",
+    "data": "2024-06-16"
+  },
+  {
+    "local": "4.º Arraiá da Suvaco Xerôso",
+    "horario": "16h",
+    "endereco": "Galpão54 – Rua Francisco Soucasseaux, 54 – Lagoinha",
+    "preco": "R$17,50 – disponível online",
+    "data": "2024-06-16"
+  },
+  {
+    "local": "Arraiá do Raiz com Chama Chuva",
+    "horario": "18h",
+    "endereco": "Forró Raiz – Av. Raja Gabáglia, 4678 – Santa Lúcia",
+    "preco": "R$30 – disponível online",
+    "data": "2024-06-16"
+  },
+  {
+    "local": "Arraiá da Autêntica",
+    "horario": "19h",
+    "endereco": "Autêntica – Rua Álvares Maciel, 312 – Santa Efigênia",
+    "preco": "R$25 – disponível online",
+    "data": "2024-06-16"
+  },
+  {
+    "local": "Arraiá PUC MINAS",
+    "horario": "8h30 às 21h",
+    "endereco": "PUC Minas São Gabriel – Rua Edson Silveira, 130 – São Gabriel (Estacionamento em frente ao bloco H)",
+    "preco": "Gratuito",
+    "data": "2024-06-18"
+  },
+  {
+    "local": "Arraiá da Vovó Luiza",
+    "horario": "10h ás 12h30 e 14h às 17h",
+    "endereco": "Museu dos Brinquedos – Av. Afonso Pena, 2564 – Funcionários",
+    "preco": "R$15 (meia-entrada) | R$30 (inteira)",
+    "data": "2024-06-22"
+  },
+  {
+    "local": "5º Arraiá do Rock no São Bento",
+    "horario": "11h",
+    "endereco": "Avenida Bento Simão, 100 – São Bento",
+    "preco": "Gratuito – retire seu ingresso",
+    "data": "2024-06-22"
+  },
+  {
+    "local": "II ArraiAU da Pedigri",
+    "horario": "12h",
+    "endereco": "Underground Black Pub – Av. Itaú, 540A – Jardim São José",
+    "preco": "R$10 – disponível online",
+    "data": "2024-06-22"
+  },
+  {
+    "local": "JURISDIÇÃO CAIPIRA – a festa junina do direito UFMG",
+    "horario": "15h",
+    "endereco": "Faculdade de Direito da UFMG – Avenida João Pinheiro, 100 Centro",
+    "preco": "R$25 – disponível online",
+    "data": "2024-06-22"
+  },
+  {
+    "local": "Arraiá Intrépida Alegria – 3ª Edição",
+    "horario": "16h",
+    "endereco": "Intrépida Alegria – Rua Alfredo Guzella, 123 – Planalto",
+    "preco": "R$25 – disponível online",
+    "data": "2024-06-22"
+  },
+  {
+    "local": "Arraiá da Amadoria – Festa Junina com É o Amô e Projeto Forrozim",
+    "horario": "16h",
+    "endereco": "Amadoria – Rua Mucuri, 325 – Floresta",
+    "preco": "R$40 – disponível online",
+    "data": "2024-06-22"
+  },
+  {
+    "local": "Minas Rock Beer – Edição Festa Junina",
+    "horario": "16h",
+    "endereco": "Av. Sinfrônio Brochado, 1053 – Barreiro",
+    "preco": "R$20 – disponível online",
+    "data": "2024-06-22"
+  },
+  {
+    "local": "Arraiá EJC Santê",
+    "horario": "18h",
+    "endereco": "Praça Duque de Caxias – Santa Tereza",
+    "preco": "Gratuito",
+    "data": "2024-06-22"
+  },
+  {
+    "local": "Arraiá da Faculdade Arnaldo",
+    "horario": "18h",
+    "endereco": "Faculdade Arnaldo – Campus Pilar – Rua Professor Otílio Macedo, 12 – Pilar",
+    "preco": "R$15 – disponível online",
+    "data": "2024-06-22"
+  },
+  {
+    "local": "ARRAIÁ MAMÃE BARREIRO – Banda Pedro Paulo e Cristina",
+    "horario": "19h",
+    "endereco": "Allegretto – Rua Antônio Teresino, 12 Santa Cruz (Barreiro)",
+    "preco": "R$65 – disponível online",
+    "data": "2024-06-22"
+  },
+  {
+    "local": "Arraiá do CCPE",
+    "horario": "10h",
+    "endereco": "Centro Cultural Padre Eustáquio – Rua Jacutinga, 550 – Padre Eustáquio",
+    "preco": "Gratuito",
+    "data": "2024-06-23"
+  },
+  {
+    "local": "Arraiá Kids",
+    "horario": "15h",
+    "endereco": "Shopping Estação – Av. Cristiano Machado, 11833 – Vila Cloris",
+    "preco": "Gratuito – retirada de ingressos antecipada",
+    "data": "2024-06-23"
+  },
+  {
+    "local": "Arraiá Baianeiros: A mistura junina",
+    "horario": "14h",
+    "endereco": "UniBH – Campus Buritis – Av. Professor Mário Werneck, 1685",
+    "preco": "R$20 – disponível online",
+    "data": "2024-06-23"
   }
 ]

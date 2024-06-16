@@ -4,6 +4,12 @@
   }
 }
 
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
 body {
   font-family: 'Arial', sans-serif;
   background-color: #f0f0f0;
