@@ -112,8 +112,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function scrollParaPaginacao() {
-        const paginacaoDiv = document.getElementById('pagination');
-        paginacaoDiv.scrollIntoView({ behavior: 'smooth' });
+        window.scrollTo(0, 0);
     }
 
     filtroDataInput.addEventListener('change', filtrarFestas);
