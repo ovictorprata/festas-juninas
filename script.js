@@ -61,7 +61,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (paginaAtual > 1) {
                     paginaAtual--;
                     mostrarFestas();
-                    window.scrollTo(0, 0);
+                    const paginacaoDiv = document.querySelector('div.row');
+                    paginacaoDiv.scrollIntoView({ behavior: 'smooth' });
                 }
             },600)
         });
@@ -79,7 +80,8 @@ document.addEventListener('DOMContentLoaded', function() {
             button.addEventListener('click', function() {
                 paginaAtual = i;
                 mostrarFestas();
-                window.scrollTo(0, 0);
+                const paginacaoDiv = document.querySelector('div.row');
+                paginacaoDiv.scrollIntoView({ behavior: 'smooth' });
             });
 
             paginacaoContainer.appendChild(button);
@@ -92,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (paginaAtual < totalPaginas) {
                 paginaAtual++;
                 mostrarFestas();
-                window.scrollTo(0, 0);
+                paginacaoContainer.scrollIntoView({ behavior: 'smooth' });
             }
         });
         paginacaoContainer.appendChild(btnProximo);
