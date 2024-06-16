@@ -1,3 +1,9 @@
+@media (max-width: 768px) {
+  #filtro-preco {
+      margin-top: 1rem;
+  }
+}
+
 body {
   font-family: 'Arial', sans-serif;
   background-color: #f0f0f0;
@@ -8,10 +14,9 @@ header {
   font-size: 30px;
 }
 
-
 .logo {
   width: auto; /* Ajuste conforme necessário */
-  height: 60px;
+  height: 40px;
   margin-right: 20px; /* Espaçamento entre a logo e o texto */
 }
 
@@ -28,8 +33,8 @@ header {
   background-color: #190f42; 
   color: #fff; 
   padding: 10px;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
   margin-bottom: 0; 
   width: 100%; 
   box-sizing: border-box; 
@@ -48,5 +53,5 @@ footer {
 footer a {
   font-weight: 600;
   text-decoration: none;
-  color: #491bff;
+  color: #FFDD4A;
 }
