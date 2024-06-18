@@ -36,10 +36,10 @@ document.addEventListener('DOMContentLoaded', function() {
             div.innerHTML = `
                 <div class="festa">
                     <h2 class="card-title">${festa.local}</h2>
-                    <p><strong>🗓️</strong> ${dataFormatada}</p>
-                    <p><strong>⏰</strong> ${festa.horario}</p>
-                    <p><strong>💰</strong> ${festa.preco}</p>
-                    <p><strong>📍</strong> ${festa.endereco}</p>
+                    <p><strong><i class="fa-regular fa-calendar-check" style="color: #fe3434;padding: 0 1px 0 1px"></i></strong> ${dataFormatada}</p>
+                    <p><strong><i class="fa-solid fa-clock" style="color: #0e86e1;"></i></strong> ${festa.horario}</p>
+                    <p><strong><i class="fa-solid fa-ticket" style="color: #ffca0a;"></i></strong> ${festa.preco}</p>
+                    <p><strong><i class="fa-solid fa-location-dot" style="color: #2fac16;padding: 0 3px 0 3px"></i></strong> ${festa.endereco}</p>
                 </div>
             `;
             festasContainer.appendChild(div);
